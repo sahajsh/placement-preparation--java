@@ -54,4 +54,12 @@ Only one traversal of the array is needed, So time Complexity is O(n).
 
 Space Complexity: O(n). 
 Two extra arrays are needed each of size n.
-*/
+
+Explanation:
+left array= Find max element on its left
+right array= find max element on its right
+
+The idea is to traverse every array element and find the highest bars on left and right side . 
+take the smaller of 2 heights
+take difference  the smaller height of current is the amount of water can be stored in this array element.
+
