@@ -61,5 +61,6 @@ right array= find max element on its right
 
 The idea is to traverse every array element and find the highest bars on left and right side . 
 take the smaller of 2 heights
-take difference  the smaller height of current is the amount of water can be stored in this array element.
+The difference between the smaller height and height of the current element is the amount of water that can be stored in this array element.
+
 
