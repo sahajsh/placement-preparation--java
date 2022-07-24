@@ -31,5 +31,36 @@ class Main
 
 }
 }
+// search the target and return the element itself.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// search the target and return the element itself.
+          int[] arr = {1,2,3,4,5};
+          int target= 2;
+          int ans = linearSearch(arr,target);
+          System.out.println(ans);
+        
+	}
+    static int linearSearch(int[] nums,int target){
+        if(nums.length==0){
+            return -1;
+        }
+        for(int element:nums){
+           if(element==target){
+               return element;
+           }
+        }
+        return -1;
+    }
+}
+
+
 
 
