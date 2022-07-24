@@ -89,4 +89,31 @@ class Main
     }
 }
 
-
+//search the target and return true and false----------------------------
+// search the target and return the true and false.
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Main
+{
+	public static void main (String[] args)
+	{
+		
+          int[] arr = {1,2,3,4,5};
+          int target= 2;
+         
+          System.out.println(linearSearch(arr,target));
+        
+	}
+    static boolean linearSearch(int[] nums,int target){
+        if(nums.length==0){
+            return false;
+        }
+        for(int element:nums){
+           if(element==target){
+               return true;
+           }
+        }
+        return false;
+    }
+}
