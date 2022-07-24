@@ -21,10 +21,12 @@ class Main
 		}
 		for(int i =0;i<str.length();i++){
             if(target==str.charAt(i)){
-				return true;
+		return true;
 			}
 		}
 		return false;
 	}
 }
+
+//by sing for each loop and iterate through array
 
