@@ -32,6 +32,41 @@ class Solution
  }
  
 }
+//
+import java.util.* ;
+import java.io.*; 
+public class Solution {
+	public static int findMajority(int[] arr, int n) {
+		// Write your code here.
+        int maxValue=arr[0];
+        int count=1;
+       
+        for(int i=1;i<n;i++){
+            if(maxValue==arr[i]){
+                count++;
+            }else{
+                count--;
+            }
+            if(count==0){
+                maxValue=arr[i];
+                count=1;
+            }
+            
+        }
+        int c=0;
+        for(int i=0;i<n;i++){
+            if(maxValue==arr[i])
+                c++;
+            
+        }
+        if(c>n/2)
+            return maxValue;
+        else
+            return -1;
+	}
+}
+
+
 
 //Leetcode: moore voting algorithm:
 class Solution{
